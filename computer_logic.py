@@ -11,8 +11,10 @@ def computerDecisionToBuy(player):
             player.buyProperty()
 
 def computerDecisionToMortgage(player):
-    if player.properties:
+    if player.money<=500:
+       if player.properties:
         player.mortgageProperty()
+        
 
 def computerTurn(player, players,board,current_square):
     print(f"\n{player.token}'s turn.")
