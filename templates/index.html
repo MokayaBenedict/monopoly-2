@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block head%}
+<h1 class="game-title">MONOPOLY</h1>
+
+{% endblock %}
+
+
+{% block body %}
+
+<div class="board">
+    <!-- Board layout goes here -->
+    <div class="board">
+        <div class="board-row">
+            <div class="board-square">
+                <h3>Go</h3>
+            </div>
+            <!-- Add more board squares here -->
+        </div>
+        <div class="board-row">
+            <div class="board-square">
+                <h3>Mediterranean Avenue</h3>
+            </div>
+            <!-- Add more board squares here -->
+        </div>
+        <div class="board-row">
+            <div class="board-square">
+                <h3>Community Chest</h3>
+            </div>
+            <!-- Add more board squares here -->
+        </div>
+        <div class="board-row">
+            <div class="board-square">
+                <h3>Baltic Avenue</h3>
+            </div>
+            <!-- Add more board squares here -->
+        </div>
+        <div class="board-row">
+            <div class="board-square">
+                <h3>Income Tax</h3>
+            </div>
+            <!-- Add more board squares here -->
+        </div>
+        <div class="board-row">
+            <div class="board-square">
+                <h3>Reading Railroad</h3>
+            </div>
+            <!-- Add more board squares here -->
+        </div>
+        <div class="board-row">
+            <div class="board-square">
+                <h3>Oriental Avenue</h3>
+            </div>
+            <!-- Add more board squares here -->
+        </div>
+        <div class="board-row">
+            <div class="board-square">
+                <h3>Chance</h3>
+            </div>
+            <!-- Add more board squares here -->
+        </div>
+        <!-- Add more board rows here -->
+    </div>
+    
+
+</div>
+
+<div class="player-info">
+    <!-- Player info goes here -->
+     <h1>player info</h1>
+     <h2>player name: {{ player_name }}</h2>
+     <h3>current balance: {{ player_balance }}</h3>
+     <h3>current position: {{ player_position }}</h3>
+     <h3>rent: {{ player_rent }}</h3>
+     <h3>houses: {{ player_houses }}</h3>
+     <h3>hotels: {{ player_hotels }}</h3>
+
+</div>
+
+<div class="game-controls">
+    <!-- Game controls go here -->
+    <button class="btn-roll-dice">rolldice</button>
+    <button class="btn-end-turn">end turn</button>
+    <button class="btn-buy-property">buy property</button>
+    <button class="btn-mortgage-property">mortgage property</button>
+</div>
+
+{% endblock %}
