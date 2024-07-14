@@ -11,10 +11,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///monopoly.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-
 db = SQLAlchemy(app)
-
-
 
 @app.route('/')
 def index():
@@ -63,9 +60,7 @@ def check_for_bankruptcy(players):
     for player in players:
         if player.checkBankruptcy():
             players.remove(player)
-    if len(players) == 1:
-        return True
-    return False
+    return len(players) == 1
 
 if __name__ == '__main__':
     with app.app_context():
