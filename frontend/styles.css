@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.monopoly-board {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    gap: 2px;
+    width: 80vw;
+    height: 80vw;
+    background-color: #fff;
+    border: 5px solid #000;
+    position: relative;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.corner {
+    font-size: 16px;
+    font-weight: bold;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.go {
+    background-color: #ff4500;
+}
+
+.jail {
+    background-color: #1e90ff;
+}
+
+.free-parking {
+    background-color: #32cd32;
+}
+
+.go-to-jail {
+    background-color: #ff6347;
+}
+
+.property {
+    background-color: #fff;
+}
+
+.community-chest, .chance {
+    background-color: #add8e6;
+}
+
+.tax {
+    background-color: #ff6347;
+}
+
+.railroad {
+    background-color: #fff;
+}
+
+.utility {
+    background-color: #fff;
+}
+
+/* Place the tiles correctly */
+.monopoly-board > .corner:nth-of-type(1) {
+    grid-column: 1 / span 2;
+    grid-row: 11 / span 2;
+}
+
+.monopoly-board > .corner:nth-of-type(2) {
+    grid-column: 11 / span 2;
+    grid-row: 11 / span 2;
+}
+
+.monopoly-board > .corner:nth-of-type(3) {
+    grid-column: 11 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.monopoly-board > .corner:nth-of-type(4) {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.monopoly-board > .tile:nth-of-type(n+2):nth-of-type(-n+10) {
+    grid-column: span 1;
+    grid-row: 12;
+}
+
+.monopoly-board > .tile:nth-of-type(n+22):nth-of-type(-n+30) {
+    grid-column: 12;
+    grid-row: span 1;
+}
+
+.monopoly-board > .tile:nth-of-type(n+32):nth-of-type(-n+40) {
+    grid-column: span 1;
+    grid-row: 1;
+}
+
+.monopoly-board > .tile:nth-of-type(n+12):nth-of-type(-n+20) {
+    grid-column: 1;
+    grid-row: span 1;
+}

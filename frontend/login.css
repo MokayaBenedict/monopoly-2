@@ -1,0 +1,106 @@
+h1{
+    text-align: center;
+    
+  }
+  body{
+    background-size: cover;
+    text-size-adjust: 10;
+    background-color: rgb(168, 168, 168);
+    text-align: center;
+    background-position: center;
+    width: 100%;
+     background-image: url("https://getwallpapers.com/wallpaper/full/3/a/8/971960-amazing-money-backgrounds-1920x1080.jpg" ) 
+    
+    
+  }
+  img{
+  width: 70px;
+  height: 70px;
+  margin-top: 0px;
+  margin-block: -0px;
+  
+  }
+  .first-part{
+    color: rgb(0, 0, 0);
+    font-style: oblique;
+  }
+  
+  .login-container{
+    background-color: rgb(255, 255, 255);
+    margin-left: 350px;
+    margin-right: 350px;
+    height: 500px;
+   
+  border-radius: 1.6rem;
+  }
+  /* .textbox{
+    /* background-color: rgb(255, 255, 255); */
+    /* margin: 3px; */
+    
+  /* } */ 
+  .button-login{
+  color: rgb(0, 0, 0);
+  padding: 8px 20px;
+  border-radius: 16px;
+  border: 3px;
+  cursor: pointer;
+  
+    
+  }
+  .button-login:hover{
+    background-color: rgb(194, 176, 20);
+  }
+  .textbox{
+    border-radius: 16px;
+    width: 250px;
+    height: 10px;
+    border: auto;
+    border-color:rgb(172, 184, 5);
+    padding: 8px 20px;
+  
+   
+  
+  }
+  #Login-form{
+    display: grid;
+    justify-content: center;
+    margin: 40px;
+    text-size-adjust: 100px;
+  }
+  .Formlabel{
+    font-size: large;
+    font-style: oblique;
+    font-weight: bold;
+  }
+  #input-email{
+    margin-bottom: 3px;
+  }
+  .forgotpassword{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    margin-left: -280px;
+    margin-top: -9880vh;
+  }
+  .signup{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    margin-left: 100px;
+    margin-right: -100px;
+    margin-top: -80px;
+    margin-bottom:-400px
+  }
+  
+  
+  
+  .navbar{
+    display: flexbox;
+    margin: 30px;
+  }
+  .guy{
+    height: auto;
+    width: 100px;
+    margin-left: -10x;
+    margin-right: 40px;
+    margin-bottom: -30px;
+  }
+ 

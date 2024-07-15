@@ -1,5 +1,5 @@
 const board = [
-    {"square": 39, "name": "GO", "type": "special"},
+    {"square": 0, "name": "GO", "type": "special"},
     {"square": 1, "name": "Mediterranean Avenue", "type": "property", "price": 60, "rent": [2, 10, 30, 90, 160, 250]},
     {"square": 2, "name": "Community Chest", "type": "community_chest"},
     {"square": 3, "name": "Baltic Avenue", "type": "property", "price": 60, "rent": [4, 20, 60, 180, 320, 450]},
@@ -37,13 +37,8 @@ const board = [
     {"square": 35, "name": "Chance", "type": "chance"},
     {"square": 36, "name": "Park Place", "type": "property", "price": 350, "rent": [35, 175, 500, 1100, 1300, 1500]},
     {"square": 37, "name": "Luxury Tax", "type": "special"},
-  
-    
     {"square": 38, "name": "Boardwalk", "type": "property", "price": 400, "rent": [50, 200, 600, 1400, 1700, 2000]}
-    
 ];
-
-const boardElement = document.querySelector('.board');
 
 const layout = [
     10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0,    // Bottom row (GO to Jail)
@@ -55,30 +50,6 @@ const layout = [
     16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 33, 
     17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 
     18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 
-    19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, // Top row (Free Parking to Go to Jail)
+    19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 // Top row (Free Parking to Go to Jail)
 ];
 
-layout.forEach((squareIndex, idx) => {
-    const cell = document.createElement('div');
-    if (squareIndex === 0) {
-        cell.className = 'cell empty';
-    } else {
-        const square = board[squareIndex];
-        cell.className = 'cell';
-        cell.innerHTML = `<div class="cell-name">${square.name}</div>`;
-    }
-    boardElement.appendChild(cell);
-});
-
-// let currentPosition = 0;
-
-// function movePlayer(steps) {
-//     currentPosition = (currentPosition + steps) % 40;
-//     const cell = boardElement.children[currentPosition];
-//     const cellRect = cell.getBoundingClientRect();
-//     const boardRect = boardElement.getBoundingClientRect();
-
-//     const playerToken = document.getElementById('player-token');
-//     playerToken.style.left = `${cellRect.left - boardRect.left + cellRect.width / 2 - playerToken.offsetWidth / 2}px`;
-//     playerToken.style.top = `${cellRect.top - boardRect.top + cellRect.height / 2 - playerToken.offsetHeight / 2}px`;
-// }
